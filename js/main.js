@@ -44,19 +44,10 @@ $(document).ready(function () {
 
     txt++;
   }
+
+  $('.preview video').eq(0).addClass('view');
+  $('#projects > ul > li > h4 > a').on('mouseenter focus' , function () {
+    var idx = $(this).closest('li').index();
+    $('.preview video').eq(idx).addClass('view').siblings().removeClass('view');
+  });
 });
-/* $('#projects > ul > li > h4').mouseenter(function () {
-  $('.main_content .preview > source').eq(0).fadeOut(400).next().delay(400).fadeIn(400, function (
-
-  ));
-  $('.main_content .preview > source').eq(1).fadeOut(400).next().delay(400).fadeIn(400, function (
-
-  ));
-  $('.main_content .preview > source').eq(2).fadeOut(400).next().delay(400).fadeIn(400, function (
-
-  ));
-  $('.main_content .preview > source').eq(3).fadeOut(400);
-
-});
-
- */

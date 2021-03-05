@@ -163,7 +163,7 @@ a:link, a:visited, a:hover, a:active{
 #menu .label{
     color: #000;
     display: block;
-    
+
 }
 #menu .label:hover:before {
     content: '-';
@@ -180,20 +180,15 @@ a:link, a:visited, a:hover, a:active{
 }
 
 /* preview */
-.main_content .preview{
+.main_content .preview video {
     position: absolute;
     width: 50vw;
     right: 0;
-    display: flex;
-    flex-direction: column;
     top: 20vh;
     
+    
 }
-.main_content .preview > source{
-    display: none;
-    position: absolute;
-}
-.main_content .preview > source:nth-child(0){
+.main_content .preview video .view {
     display: block;
 }
 
