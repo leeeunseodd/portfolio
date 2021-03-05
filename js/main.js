@@ -23,21 +23,18 @@ $(document).ready(function () {
       } else if (txt === 2) {
         $('#intro .intro_txt > div').eq(1).fadeOut(600).next().delay(600).fadeIn(600, function () {
           if (type === 'keyboard') $(this).children().focus();
+          $('body').css({cursor: 'default' , color : '#fff'});
         });
       } else if (txt === 3) {
-        $('#intro').fadeOut(1000);
-        $('body').css({cursor: 'default' , color : 'white'});
+        $('.main_content').stop().animate({left:0} , 600, function () {
+          $('#intro').fadeOut(1000);
+        }); 
       }  
-      else if (txt==4){
-        
-      }
       // #follow에 숫자 출력
       if (txt < 3)$('#intro #follow').text((txt + 1) + ' / ' + 3);
 
       txt++;
       
-    }
-    
-    
+    } 
   });
   
