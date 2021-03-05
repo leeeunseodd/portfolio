@@ -151,21 +151,21 @@ a:link, a:visited, a:hover, a:active{
       }
 }
 
-/* main_content menu */
+/* main_content click */
 
-#menu {
+#click {
     position: absolute;
     top: 2vw;
     right: 2vw;
     cursor: pointer;
     z-index: 3000;
 }
-#menu .label{
+#click .label{
     color: #000;
     display: block;
 
 }
-#menu .label:hover:before {
+#click .label:hover:before {
     content: '-';
     position: absolute;
     top: 2vw;
