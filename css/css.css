@@ -72,12 +72,12 @@ a:link, a:visited, a:hover, a:active{
     z-index: 3000;
     font-size: 20px;
 }
-
-.intro_bg > .bg{
+/* 
+.intro_bg > .i_bg{
     width: 100%;
     height: 100vh;
     animation: box;
-    animation-duration: .7s;
+    animation-duration: .9s;
     background: #000;
     
 }
@@ -85,7 +85,7 @@ a:link, a:visited, a:hover, a:active{
 @keyframes box{
     from{background: #000; width: 100%; height: 100vh;}
     to{background: #000; width: 0%; height: 100vh;}
-}
+} */
 
 
 /* main contents */
@@ -101,7 +101,7 @@ a:link, a:visited, a:hover, a:active{
     left: 150px;
     display: inline-block;
 }
-#projects > ul > li >h4{
+#projects > ul > li > h4{
     position: relative;
     font-family: "Lexend Exa";
     font-weight: 400;
@@ -153,43 +153,56 @@ a:link, a:visited, a:hover, a:active{
 
 /* main_content click */
 
-#click {
+.click {
     position: absolute;
     top: 2vw;
-    right: 2vw;
+    right: 3vw;
     cursor: pointer;
     z-index: 3000;
 }
-#click .label{
+.click .label{
     color: #000;
     display: block;
+    position: relative;
 
 }
-#click .label:hover:before {
-    content: '-';
+.click .label:before {
+    content: '⏤';
+    display: block;
+    width: 6vw;
+    height: 2vw;
+    left: -20px;
+    top: -1px;
     position: absolute;
-    top: 2vw;
-    border-bottom: 1px solid currentColor;
-    right: -15px;
-    height: 1px;
-    width: 0;
-    background-color: currentColor;
-    opacity: 0;
-    -webkit-transition: .3s cubic-bezier(.165,.84,.44,1);
-    transition: .3s cubic-bezier(.165,.84,.44,1)
+    overflow: hidden;
+    color: rgb(34, 34, 34);
+    display: none;
 }
+.click .label:hover::before{
+    display: block;
+}
+.click .label:hover{
+    transform: translate(30%);
+    transition: 0.5s all;
+}
+
+
 
 /* preview */
-.main_content .preview video {
+.main_content .preview{
     position: absolute;
     width: 50vw;
     right: 0;
     top: 20vh;
-    
-    
 }
-.main_content .preview video .view {
-    display: block;
+
+.main_content .preview video{
+    display: none;
+    width: 100%;
+}
+
+.view{
+    display: block !important;
 }
 
 /* About ME */
