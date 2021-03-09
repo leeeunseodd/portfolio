@@ -25,17 +25,27 @@ $(document).ready(function () {
   $('#content_box').on('scroll' , function () {
     
   });
+
+
+  /* 배너 페이지 banner page */
+
+  
+  var _slideWrap = $('.swiper_container .swiper_wrapper .wiper_box')
+
+  $('.swiper-container').on('scroll' , function () {
+    if (_slideWrap.is(':animated')) return false;
+
+    _slideWrap.prepend(_slideWrap.children().last().clone()).css('marginTop' , -480).animate({marginTop:0}.1000, function () {
+      $(this).children().last().remove();
+      ariaHidden();
+    })
+  });
+
+  
 });
 
 
-/* 
-<div id="content_box">
-        <div id="slide_box"  aria-live="polite">
-            <ul class="slide_wrap">
-                <li class="slide"><img src="img/banner1.jpg" alt=""></li>
-                <li class="slide"><img src="img/banner2.jpg" alt=""></li>
-                <li class="slide"><img src="img/banner3.jpg" alt=""></li>
-                <li class="slide"><img src="img/banner4.jpg" alt=""></li>
-            </ul>
-        </div>
-    </div> */
+
+
+
+

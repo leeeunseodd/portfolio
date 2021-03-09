@@ -35,6 +35,7 @@ body{
     border: 2px solid rgb(114, 114, 114);
     position: relative;
 }
+
 #top_cnt .click{
     position: absolute;
     font-size: 22px;
