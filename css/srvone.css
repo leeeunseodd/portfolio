@@ -87,67 +87,11 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
 
 /* 배너 페이지 banner */
 
-/* h3 {
-    font-size: 100%;
-  }
-.swiper_container{
-    width: 100%;
-    min-width: 1200px;
-    height: 100vh;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-#swiper_container .swiper_wrapper{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1024px;
-    height: 37.9vh;
-    overflow: hidden;
-}
-#swiper_container .wiper_box{
-    position: relative;
-}
-
-#swiper_container .item_container {
-    position: relative;
-    top: calc(100vh / 3);
-}
-
-#swiper_container .item{
-    display: flex;
-    -ms-flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: calc(100vh / 3);
-    min-height: 160px;
-} 
-#swiper_container .item.active {
-    color: rgb(0, 0, 0);
-  }
-
-  #swiper_container .item h3 {
-    font-size: 110px;
-    line-height: 1.27;
-    color: rgb(255, 255, 255);
-  }
-
-  #swiper_container .item p {
-    opacity: 0;
-    transition: opcity 0.5s;
-  }
-
-  #swiper_container .item.active p {
-    opacity: 1;
-  } */
   h3 {
     font-size: 100%;
   }
 
-  #swiper_container {
+  #verSlider {
     width: 100%;
     max-width: 1200px;
     height: 100vh;
@@ -155,7 +99,7 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
     overflow: hidden;
   }
 
-  #swiper_container .swiper_wrapper {
+  #verSlider .photofix {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -166,16 +110,16 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
   }
 
   /* height: 360px; */
-  #swiper_container .wiper_box {
+  #verSlider .photo_wrap {
     position: relative;
   }
 
-  #swiper_container .item_container {
+  #verSlider .item_container {
     position: relative;
     top: calc(100vh / 3);
   }
 
-  #swiper_container .item {
+  #verSlider .item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,20 +130,20 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
     
   }
 
-  #swiper_container .item.active {
+  #verSlider .item.active {
     color: rgb(0, 0, 0);
   }
 
-  #swiper_container .item h3 {
+  #verSlider .item h3 {
     font-size: 110px;
     line-height: 1.27;
     color: rgb(255, 255, 255);
   }
-  #swiper_container .item.active h3 {
+  #verSlider .item.active h3 {
     color: rgb(0, 0, 0);
   }
 
-  #swiper_container .item p {
+  #verSlider .item p {
     opacity: 0;
     transition: opcity 0.5s;
     color: rgb(0, 0, 0);
@@ -207,6 +151,6 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
     
   }
 
-  #swiper_container .item.active p {
+  #verSlider .item.active p {
     opacity: 1;
   }

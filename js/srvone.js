@@ -29,7 +29,7 @@ $(document).ready(function () {
 
   /* 배너 페이지 banner page */
 
-  var _itemWrap = $('#swiper_container .item_container');
+  var _itemWrap = $('#verSlider .item_container');
       var current = 0; //현재보여지는 .item의 인덱스 번호
       var total = _itemWrap.children().length; // 전체 item 개수 - 7
       var timerWheel = 0; //mousewheel 이벤트의 실행문 누적을 방지
@@ -77,24 +77,16 @@ $(document).ready(function () {
       function sliderActive() {
         _itemWrap.stop().animate({
           top: movePos * current * -1 + movePos
-        }, 1000); //movePos를 더해주는 이유 : 시작이 상단 ⅓ 아래 위치
+        }, 1000); //movePos를 더해주는 이유 : 시작이 상단 ⅓ 아래 위치 
         _itemWrap.children().eq(current).addClass('active').siblings().removeClass('active');
 
-        _itemWrap.prev().find('.wiper_box').stop().animate({
+        _itemWrap.prev().find('.photo_wrap').stop().animate({
           top: 360 * current * -1
         }, 1000, 'easeInOutCirc'); //easeInOutCirc, easeInCirc
       }
 });
 
-/* 
 
- var _itemWrap = $('#swiper_container .item_container');
-      var current = 0; //현재보여지는 .item의 인덱스 번호
-      var total = _itemWrap.children().length; // 전체 item 개수 - 7
-      var timerWheel = 0; //mousewheel 이벤트의 실행문 누적을 방지
-
-      var movePos = $(window).height() / 3;
-*/
 
 
 
