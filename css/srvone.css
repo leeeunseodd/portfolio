@@ -30,17 +30,15 @@ body{background: rgb(0, 0, 0);}
     align-items: center;
     color: rgb(0, 0, 0);
     text-align: center; 
-    -webkit-text-stroke: 1.5px #8b8b8b;
+    -webkit-text-stroke: 1.5px #8dcdd1;
     /* border: 1px solid #fff;  */
-    font-size: 15vw;
-    top: 27%;
+    font-size: 13vw;
+    top: -9%;
 }
 #container{
     overflow: hidden ;
     padding: 10vh 0;
-    por
-    
-    
+
 }
 .cnt{
     padding-left: 10%;
@@ -50,12 +48,12 @@ body{background: rgb(0, 0, 0);}
     position: relative;
     z-index: 10;
     margin-bottom: -8vw;
-    margin-left: 15vw;
+    margin-left: 24vw;
     font-size: 12vw;
     font-weight: 400;
-    font-family: "Rubik"; /* 폰트 바꾸기 */
-    color: rgb(83, 46, 248);
-    
+    font-family: "Righteous"; /* 폰트 바꾸기 */
+    color: rgb(241, 241, 241);
+    /* -webkit-text-stroke: 1px #6d6d6d; */
     
 }
 .cnt:nth-child(even){
@@ -64,7 +62,7 @@ body{background: rgb(0, 0, 0);}
     padding-right: 10%;
 }
 .cnt:nth-child(even) h2{
-    margin-right: 15vw;
+    margin-right: 22vw;
 }
 /* transition1) figure 태그 */
 .cnt figure ,.cnt h2{

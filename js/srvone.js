@@ -1,5 +1,5 @@
 $(document).ready(function () { 
-  // showreel 다음 사라지기
+  // show 다음 사라지기
   $('#bg2').stop().fadeOut(1000).addClass('load');
 
   $(window).on('scroll' , function () {
@@ -30,17 +30,6 @@ $(document).ready(function () {
   /* 배너 페이지 banner page */
 
   
-  var _slideWrap = $('.swiper_container .swiper_wrapper .wiper_box')
-
-  $('.swiper-container').on('scroll' , function () {
-    if (_slideWrap.is(':animated')) return false;
-
-    _slideWrap.prepend(_slideWrap.children().last().clone()).css('marginTop' , -480).animate({marginTop:0}.1000, function () {
-      $(this).children().last().remove();
-      ariaHidden();
-    })
-  });
-
   
 });
 
