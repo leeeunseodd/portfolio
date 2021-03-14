@@ -213,12 +213,13 @@ section {
 
 .article_top .Box {
     position: relative;
-    width: 33%;
+    width: 32%;
     height: 650px;
     /* margin: 27px 27px 0px 27px; */
     float: left;
     /* border: 1px solid #000; */
     top: 60px;
+    left: 30px;
 
 
 
