@@ -43,8 +43,7 @@ body {
     height: 100%;
     position: fixed;
     opacity: 0.9;
-    left: -100px;
-    top: -200px;
+  
 }
 
 .vid video {

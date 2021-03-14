@@ -26,11 +26,48 @@ button{
 body{
     background: #f6f6f6;
 }
+#backClick{
+    position: absolute;
+    width: 200px;
+    top: 2vw;
+    left: 2vw;
+    cursor: pointer;
+    z-index: 3000;
+    /* border: 1px solid #000; */
+}
 
+.click .label{
+    color: rgb(0, 0, 0);
+    display: block;
+    position: relative;
+    font-weight: 400;
+
+}
+.click .label:before {
+    content: '⏤';
+    display: block;
+    width: 6vw;
+    height: 2vw;
+    left: -20px;
+    top: -1px;
+    position: absolute;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+.click .label:hover::before{
+    display: block;
+}
+.click .label:hover{
+    transform: translate(30%);
+    transition: 0.5s all;
+}
 /* 포스터 poster */
 #wrap{
   width: 100%;
+  height: 100vh;
   background: url(../img/poster_bg.jpg);
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -42,6 +79,7 @@ body{
     margin: 0 auto;
     padding-top: 3%;
     perspective: 1000px;
+    /* border: 1px solid #333; */
 }
 .slider ul{
     height: 720px;

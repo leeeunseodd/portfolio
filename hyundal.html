@@ -1,156 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Hyundai</title>
     <link rel="stylesheet" href="css/hyundal.css">
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bundle.min.js"></script>
     <script src="js/project.js"></script>
-    <link rel="stylesheet" href="css/bundle.css">
-     
-     
+
+
+
 </head>
+
 <body>
     <div id="bg1" class="darkbg">
     </div>
 
     <div id="wrap">
         <header>
-          <div class="he_top">
-           <h1><img src="img/logo.jpg" alt=""></h1>
-            <div class="gnb">
-                <ul>
-                    <li><a href="#">Artists</a></li>
-                    <li><a href="#">Exhibitions</a></li>
-                    <li><a href="#">Stories</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Search</a></li>
-                </ul>
-            </div>
+            <div class="he_top">
+                <h1><a href=""><img src="img/logo.jpg" alt=""></a></h1>
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">Artists</a></li>
+                        <li><a href="#">Exhibitions</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
-            <div class="slide">
-                <!-- <button id="btn" class="btn1" type="button" ></button>
-                
-
-                <button id="btn" class="btn2" type="button"></button>
-
-                <button id="btn" class="btn3" type="button"></button> -->
-      
-              <ul class="slide_img">
-                    <li class="s_img1"></li>
-                    <li class="s_img2"></li>
-                    <li class="s_img3"></li>
+        <div id="mainSlider" class="slider" role="region" aria-roledescription="carousel" aria-label="visualSlider ">
+            <div class="control">
+                <ul class="pagination">
+                    <li>
+                        <button type="button" aria-label="할아버지" aria-controls="item1"></button>
+                    </li>
+                    <li>
+                        <button type="button" aria-label="가로 나무" aria-controls="item2"></button>
+                    </li>
+                    <li>
+                        <button type="button" aria-label="한자" aria-controls="item3"></button>
+                    </li>
                 </ul>
-                
-                <div class="slide-pagination"></div>
-              
             </div>
-   
-        
+
+            <div class="visual" id="visualItems" aria-live="off">
+                <div class="item_wrap">
+                    <div class="item" id="item1" role="group" aria-roledescription="slide" aria-label="3개의 슬라이드 1"><a
+                            href=""></a>
+                    </div>
+
+                    <div class="item" id="item2" role="group" aria-roledescription="slide" aria-label="3개의 슬라이드 2"><a
+                            href=""></a>
+                    </div>
+
+                    <div class="item" id="item3" role="group" aria-roledescription="slide" aria-label="3개의 슬라이드 3"><a
+                            href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section>
-           <div class="article_top">
-            <ul>
+            <div class="article_top">
 
-                    <li class="at_img1"><a href="#"></a></li>
+                <div class="Box">
+                    <div class="at_img1" id="img"><a href="#"></a></div>
+                    <div class="at_text">News<p><b>Seulgi Lee 이슬기 : Korea Artist Prize 2020</b></p></div>
+                </div>
 
-                    <li class="at_img2"><a href="#"></a></li>
+                <div class="Box">
+                    <div class="at_img2" id="img"><a href="#"></a></div>
+                    <div class="at_text">Press<p><b>Minjung Kim 김민정 in The New York Times</b></p></div>
+                </div>
 
-                    <li class="at_img3"><a href="#"></a></li>
-                     
-            </ul>
-            </div>
-            
-            <div>
-                <div class="at_text">News<p><b>Seulgi Lee 이슬기 : Korea Artist Prize 2020</b></p></div>
-                 
-                <div class="at_text">Press<p><b>Minjung Kim 김민정 in The New York Times</b></p></div>
-                  
-                <div class="at_text">News<p><b>Yang Jung UK 양정욱 : You said to the side, and I said to the left</b></p></div>
-              
-          
+                <div class="Box">
+                    <div class="at_img3" id="img"><a href="#"></a></div>
+                    <div class="at_text">News<p><b>Yang Jung UK 양정욱 : You said to the side</b></p></div>
+                </div>
             </div>
         </section>
-           
-           
-            <div class="article_middle">
-                <div class="am_img"></div>
-                <div class="am_text">News<p></p>&nbsp;
-                <p>&nbsp;</p>  
-                
+
+
+        <div class="article_middle">
+            <div class="am_img"></div>
+            <div class="am_text">News<p></p>&nbsp;
+                <p>&nbsp;</p>
+
                 <h2>Seung-take Lee 이승택-Non-Art: The Inversive Act</h2>
-                <p>&nbsp;</p> <p>&nbsp;</p>
-                <p>The retrospective exhibiton "Lee Seung Taek's Non-art: The Inversive Act" of Seung-teak Lee, the forerunner of Korean experimental art, is now open at the National Museum of Modern and Contemporart Art, Seoul.</p></div>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>The retrospective exhibiton "Lee Seung Taek's Non-art: The Inversive Act" of Seung-teak Lee, the
+                    forerunner of Korean experimental art, is now open at the National Museum of Modern and Contemporart
+                    Art, Seoul.</p>
             </div>
-            
-            <div class="article_bottom">
-                  <div class="article">
+        </div>
+
+        <div class="article_bottom">
+            <div class="contentBox">
+                <div class="article">
                     <div class="ab _img1"><a href="#"></a></div>
-                    <div class="ab_text">News<p></p><b>In Memoriam: Kim Tschang-Yeul 김창열</b><p>lt is with great sadness that bid farewell to Kim Tscharg-Yeul who passed away on the 5th of....
-                    </p></div>
-                 </div> 
-                    
-                   <div class="article">
+                    <div class="ab_text">News<p></p><b>In Memoriam: Kim Tschang-Yeul 김창열</b>
+                        <p>lt is with great sadness that bid farewell to Kim Tscharg-Yeul who passed away on the 5th
+                            of....
+                        </p>
+                    </div>
+                </div>
+
+                <div class="article">
                     <div class="ab _img2"><a href="#"></a> </div>
                     <div class="ab_text">Video<p></p><b>KIM Tschang-Yeul 김창열 : The path</b></div>
-                    </div>
-                  
-                   
-                    <div class="article">
+                </div>
+
+
+                <div class="article">
                     <div class="ab _img3"><a href="#"></a></div>
-                    <div class="ab_text">Books<p></p><b>Kim Tschang-Yeul 김창열 : The Path</b><p>Published on the occasion of Kim Tschang-Yeul's solo exhibition "The Path" at Gallery Hyundai.</p></div>
-                    
-                    </div> 
-                    
-                    <div class="article">
+                    <div class="ab_text">Books<p></p><b>Kim Tschang-Yeul 김창열 : The Path</b>
+                        <p>Published on the occasion of Kim Tschang-Yeul's solo exhibition "The Path" at Gallery
+                            Hyundai.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="article">
                     <div class="ab _img4"><a href="#"></a> </div>
-                    <div class="ab_text">News<p></p><b>Kang Seung Lee 이강승 : Solidarity Spores</b><p>Kang Seung Lee revisits the 1992 LA riots in "untitled(la recoluciin es la solucion!)."</p></div>
-                   
+                    <div class="ab_text">News<p></p><b>Kang Seung Lee 이강승 : Solidarity Spores</b>
+                        <p>Kang Seung Lee revisits the 1992 LA riots in "untitled(la recoluciin es la solucion!)."</p>
                     </div>
-                    
-                    <div class="article">
+
+                </div>
+
+                <div class="article">
                     <div class="ab _img5"><a href="#"></a></div>
-                    <div class="ab_text">News<p></p><b>Myoung Ho Lee 이명호 : [drenaeda]</b><p>Myoung Ho Lee's solo exhibiton [drenaeda] is on view at Goeun Museum of Photography in Busan.</p></div>
-                    
+                    <div class="ab_text">News<p></p><b>Myoung Ho Lee 이명호 : [drenaeda]</b>
+                        <p>Myoung Ho Lee's solo exhibiton [drenaeda] is on view at Goeun Museum of Photography in Busan.
+                        </p>
                     </div>
-                    
-                    <div class="article">
+
+                </div>
+
+                <div class="article">
                     <div class="ab _img6"><a href="#"></a></div>
-                    <div class="ab_text">Press<p></p><b>lvan Navarro recently participated in a private "zendialogue" with Harper's BAZAAR Korea's art issue.</b></div>
-                    
-                    </div>
-                    
-                    <div class="article">
+                    <div class="ab_text">Press<p></p><b>lvan Navarro recently participated in a private "zendialogue"
+                            with
+                            Harper's BAZAAR Korea's art issue.</b></div>
+
+                </div>
+
+                <div class="article">
                     <div class="ab _img7"><a href="#"></a></div>
-                    <div class="ab_text">Essays<p></p><b>Yang Jung Uk 양정욱 : 곤란한 그림</b><p>Yang Jung Uk presents his essay Awkward Drawings accompanied by new drawings.</p></div>
-                    
+                    <div class="ab_text">Essays<p></p><b>Yang Jung Uk 양정욱 : 곤란한 그림</b>
+                        <p>Yang Jung Uk presents his essay Awkward Drawings accompanied by new drawings.</p>
                     </div>
-                    
-                    
-                    <div class="article">
+
+                </div>
+
+
+                <div class="article">
                     <div class="ab _img8"><a href="#"></a></div>
-                    <div class="ab_text">Books<p></p><b>Choi Minhwa 최민화 : Once Upon a Time</b><p>The mewly published exhibition catalogue catalogue contains 32 paintings, developed through 20 years of...</p></div>
-                    
+                    <div class="ab_text">Books<p></p><b>Choi Minhwa 최민화 : Once Upon a Time</b>
+                        <p>The mewly published exhibition catalogue catalogue contains 32 paintings, developed through
+                            20
+                            years of...</p>
                     </div>
-               
+
+                </div>
             </div>
-            
-            <div class="click"><a href=""><b>Load More</b><input type="image" src="img/click.jpg" alt=""/></a></div>
-     
-        
-         <footer>
-           <ul class="fo_sns">
-            <li><a href=""><i class="fa fa-facebook"></i><b>facebook</b></a></li>
-            <li><a href=""><i class="fa fa-twitter"></i><b>twitter</b></a></li>
-            <li><a href=""><i class="fa fa-google"></i><b>google</b></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i><b>instagram</b></a></li>
-            <li><a href=""><i class="fa fa-youtube"></i><b>youtube</b></a></li>
-           </ul>
-           
-           <div class="fo_text">14 Samcheong-ro Jongno-gu, Seoul 03062 Korea <p></p>
-           Gallery Hyundai-All rights reserved 2020</div>
+
+        </div>
+
+        <div class="click"><a href=""><b>Load More</b><input type="image" src="img/click.jpg" alt="" /></a></div>
+
+
+        <footer>
+            <ul class="fo_sns">
+                <li><a href=""><i class="fa fa-facebook"></i><b>facebook</b></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i><b>twitter</b></a></li>
+                <li><a href=""><i class="fa fa-google"></i><b>google</b></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i><b>instagram</b></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i><b>youtube</b></a></li>
+            </ul>
+
+            <div class="fo_text">14 Samcheong-ro Jongno-gu, Seoul 03062 Korea <p></p>
+                Gallery Hyundai-All rights reserved 2020</div>
         </footer>
     </div>
 </body>
+
 </html>

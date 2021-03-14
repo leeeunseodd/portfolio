@@ -1,4 +1,4 @@
-@charset "utf-8";
++@charset "utf-8";
 *{margin: 0;padding: 0;box-sizing: border-box;}
 ul , li{list-style: none;}
 img{vertical-align: top;}
@@ -90,6 +90,44 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
   h3 {
     font-size: 100%;
   }
+  #backClick{
+    position: absolute;
+    width: 40vw;
+    top: 2vw;
+    left: 2vw;
+    cursor: pointer;
+    z-index: 3000;
+    /* border: 1px solid #000; */
+}
+
+.click .label{
+    color: rgb(255, 255, 255);
+    display: block;
+    position: relative;
+    font-weight: 400;
+
+}
+.click .label:before {
+    content: '⏤';
+    display: block;
+    width: 6vw;
+    height: 2vw;
+    left: -20px;
+    top: -1px;
+    position: absolute;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+.click .label:hover::before{
+    display: block;
+}
+.click .label:hover{
+    transform: translate(10%);
+    transition: 0.5s all;
+}
+
+/* slider */
 
   #verSlider {
     width: 100%;
@@ -102,10 +140,10 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
   #verSlider .photofix {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
-    width: 1200px;
-    height: 47vh;
+    width: 1800px;
+    height: 49%;
     overflow: hidden;
   }
 
@@ -113,6 +151,7 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
   #verSlider .photo_wrap {
     position: relative;
   }
+ 
 
   #verSlider .item_container {
     position: relative;
@@ -136,7 +175,7 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
 
   #verSlider .item h3 {
     font-size: 110px;
-    line-height: 1.27;
+    /* line-height: 1.27; */
     color: rgb(255, 255, 255);
   }
   #verSlider .item.active h3 {
@@ -148,6 +187,7 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
     transition: opcity 0.5s;
     color: rgb(0, 0, 0);
     font-weight: 800;
+    margin-top: -95px;
     
   }
 
