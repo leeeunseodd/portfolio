@@ -93,22 +93,23 @@ a:link, a:visited, a:hover, a:active{
 
 #main_content{
     position: relative;
-    left: -100%;z-index: 1000;
+    left: -100%;
+    z-index: 1000;
     /* border: 1px solid #000; */
 }
 #projects{
     position: absolute;
-    height: 50vh;
-    width: 50vw;
+    height: 50%;
+    width: 50%;
     top: 3%;
-    left: -11%;
+    left: -8%;
     transform: rotate(-90deg);
     display: inline-block;
     /* border: 1px solid #444; */
 }
-#projects > ul > li{
+
    
-}
+
 #projects > ul > li > h4{
     position: relative;
     font-family: "Lexend Exa";

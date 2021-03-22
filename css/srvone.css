@@ -90,24 +90,24 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
   h3 {
     font-size: 100%;
   }
-  #backClick{
+  .back_btn{
     position: absolute;
-    width: 40vw;
-    top: 2vw;
+    width: 200px;
+    top: 1.5vw;
     left: 2vw;
     cursor: pointer;
     z-index: 3000;
     /* border: 1px solid #000; */
 }
 
-.click .label{
+.back_btn .label{
     color: rgb(255, 255, 255);
     display: block;
     position: relative;
     font-weight: 400;
 
 }
-.click .label:before {
+.back_btn .label:before {
     content: '⏤';
     display: block;
     width: 6vw;
@@ -119,11 +119,11 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
     color: rgb(255, 255, 255);
     display: none;
 }
-.click .label:hover::before{
+.back_btn .label:hover::before{
     display: block;
 }
-.click .label:hover{
-    transform: translate(10%);
+.back_btn .label:hover{
+    transform: translate(30%);
     transition: 0.5s all;
 }
 
@@ -135,28 +135,31 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
     height: 100vh;
     margin: 0 auto;
     overflow: hidden;
+  
   }
 
   #verSlider .photofix {
     position: fixed;
     top: 50%;
-    left: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 1800px;
-    height: 44%;
+    width: 1200px;
+    height: 360px;
     overflow: hidden;
-  }
 
+  }
+  
   /* height: 360px; */
   #verSlider .photo_wrap {
     position: relative;
   }
- 
+  
 
   #verSlider .item_container {
     position: relative;
     top: calc(100vh / 3);
   }
+  
 
   #verSlider .item {
     display: flex;
@@ -187,8 +190,6 @@ a:link, a:visited,a:hover,a:active {text-decoration: none;color: inherit;}
     transition: opcity 0.5s;
     color: rgb(0, 0, 0);
     font-weight: 800;
-    
-    
   }
 
   #verSlider .item.active p {

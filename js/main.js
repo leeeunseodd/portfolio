@@ -43,6 +43,15 @@ $(document).ready(function () {
 
     txt++;
   };
+  
+  if (location.hash === '#main_content'){
+    $('#intro').hide().after('<div class="darkbg"></div>').next().stop().fadeOut(1000, function () {
+      $('#main_content').css('visibility', 'visible').animate({left: 0}, 600);
+      $(this).remove();
+      location.hash = '';
+    });
+
+  }
 
   $('.preview video').eq(0).addClass('view');
   $('#projects > ul > li > h4 > a').on({

@@ -37,7 +37,7 @@ $(document).ready(function () {
       
     }
 
-    var timer = senInterval(playSlider, 3000);
+    var timer2 = setInterval(playSlider, 2000);
 
     function playSlider(){
       console.log(current);
@@ -48,18 +48,18 @@ $(document).ready(function () {
 
     $('.slider').on({
       mouseenter: function () {
-        clearInterval(timer);
+        clearInterval(timer2);
       },
       mouseleave: function () {
-        timer = setInterval(playSlider , 3000);
+        timer2 = setInterval(playSlider , 3000);
       }
     });
     $('.sliderControl').on({
       mouseenter: function () {
-        clearInterval(timer);
+        clearInterval(timer2);
       },
       mouseleave: function () {
-        timer = setInterval(playSlider , 3000);
+        timer2 = setInterval(playSlider , 3000);
       }
     });
 

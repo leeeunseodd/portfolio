@@ -26,24 +26,24 @@ button{
 body{
     background: #f6f6f6;
 }
-#backClick{
+.back_btn{
     position: absolute;
     width: 200px;
-    top: 2vw;
+    top: 1vw;
     left: 2vw;
     cursor: pointer;
     z-index: 3000;
     /* border: 1px solid #000; */
 }
 
-.click .label{
+.back_btn .label{
     color: rgb(0, 0, 0);
     display: block;
     position: relative;
     font-weight: 400;
 
 }
-.click .label:before {
+.back_btn .label:before {
     content: '⏤';
     display: block;
     width: 6vw;
@@ -55,10 +55,10 @@ body{
     color: rgb(0, 0, 0);
     display: none;
 }
-.click .label:hover::before{
+.back_btn .label:hover::before{
     display: block;
 }
-.click .label:hover{
+.back_btn .label:hover{
     transform: translate(30%);
     transition: 0.5s all;
 }
